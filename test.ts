@@ -1,4 +1,4 @@
-const { fetch } = require('@inrupt/universal-fetch');
+import { fetch } from '@inrupt/universal-fetch';
 
 async function main() {
   try {

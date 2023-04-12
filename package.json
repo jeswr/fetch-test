@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "ts-node test.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@inrupt/universal-fetch": "^1.0.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
   }
 }
