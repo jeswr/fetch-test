@@ -12,8 +12,8 @@ jobs:
     strategy:
       matrix:
         p1: [a, b, c, d, e]
-        # p2: [a, b, c, d, e]
-        # p3: [a, b, c, d, e]
+        p2: [a, b, c, d, e]
+        p3: [a, b, c, d, e]
         node-version: [18.x, 19.x]
 
 
