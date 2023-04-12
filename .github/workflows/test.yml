@@ -18,7 +18,7 @@ jobs:
 
 
     runs-on: ubuntu-latest
-    name: p1 ${{ matrix.p1 }} p2 ${{ matrix.p3 }} p3 ${{ matrix.p3 }} 
+    name: p1 ${{ matrix.p1 }} p2 ${{ matrix.p3 }} Node ${{ matrix.node-version }} 
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
