@@ -8,7 +8,16 @@ on:
 
 jobs:
   build:
+
+    strategy:
+      matrix:
+        p1: [a, b, c, d, e]
+        p2: [a, b, c, d, e]
+        p3: [a, b, c, d, e]
+
+
     runs-on: ubuntu-latest
+    name: p1 ${{ matrix.p1 }} p2 ${{ matrix.p3 }} p3 ${{ matrix.p3 }} 
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
