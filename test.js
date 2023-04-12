@@ -1,3 +1,3 @@
-fetch('https://raw.githubusercontent.com/jeswr/fetch-test/main/data.txt')
+fetch('https://api.github.com/repos/eyereasoner/eye/releases/latest')
   .then(res => res.text())
-  .then(text => console.log(text));
+  .then(text => console.log(text.slice(0, 10)));
