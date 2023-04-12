@@ -13,7 +13,7 @@ jobs:
       matrix:
         p1: [a, b, c, d, e]
         p2: [a, b, c, d, e]
-        # p3: [a, b, c, d, e]
+        p3: [a, b, c]
         node-version: [14.x, 16.x, 17.x, 18.x, 19.x]
 
 
