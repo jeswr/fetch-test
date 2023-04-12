@@ -13,7 +13,8 @@ jobs:
       matrix:
         p1: [a, b, c, d, e]
         p2: [a, b, c, d, e]
-        p3: [a, b, c, d, e]
+        # p3: [a, b, c, d, e]
+        node-version: [16.x, 18.x, 19.x]
 
 
     runs-on: ubuntu-latest
@@ -22,6 +23,6 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm test

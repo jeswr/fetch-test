@@ -1,11 +1,15 @@
-fetch('https://api.github.com/repos/eyereasoner/eye/releases/latest')
-  .then(res => {
+async function main() {
+  try {
+    const res = await fetch('https://api.github.com/repos/eyereasoner/eye/releases/latest');
+    const text = await res.text();
+    console.log(text.slice(0, 10), res.status);
     if (res.status !== 200) {
-      process.exit(1);
+      process.exit(1)
     }
-    return res.text();
-  })
-  .then(text => console.log(text.slice(0, 10), res.status))
-  .catch(() => {
-    process.exit(1)
-  })
+  } catch (e) {
+    console.error(e);
+    process.exit(1);
+  }
+}
+
+main();
