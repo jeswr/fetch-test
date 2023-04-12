@@ -14,7 +14,7 @@ jobs:
         p1: [a, b, c, d, e]
         # p2: [a, b, c, d, e]
         # p3: [a, b, c, d, e]
-        node-version: [16.x, 17.x, 18.x, 19.x]
+        node-version: [18.x, 19.x]
 
 
     runs-on: ubuntu-latest
